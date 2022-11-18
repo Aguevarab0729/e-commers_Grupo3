@@ -11,7 +11,16 @@ function animateBars(){
     line2_bars.classList.toggle("activeline2_bars_menu");
     line3_bars.classList.toggle("activeline3_bars_menu");
    
+    addEventListener("DOMContentLoaded", () => {
+        const bars = document.querySelector(".bars_menu")
+        if (bars) {
+            bars.addEventListener("click", () =>{
+                const menu = document.querySelector(".menu_items")
+                menu.classList.toggle("show")
+            })
     
+        }
+    })   
     
 
 }

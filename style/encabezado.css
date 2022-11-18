@@ -1,3 +1,8 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+ }
 .head {
     display: flex; 
     width: 100%;
@@ -10,11 +15,14 @@
     margin-bottom: 0.75rem;
     
 }
+
+
 .head_logo {
      width: 250px;
      margin-left: 30px;
   
 }
+
 .head_nav {
     font-family: 'Roboto';
     font-style: normal;
@@ -22,12 +30,9 @@
     text-align: center;
     text-decoration: none;
     font-size: 17px;
-    position: relative;
-    margin-top: 5px;
-    
-  
       
 }
+
 .head_nav button{
     background-color: #7c4185;
     color: #ffffff;
@@ -40,6 +45,8 @@
     margin-top: 2px;
     
 }
+
+
 .head_link {
     display: inline-block;
     margin-right: .7rem;
@@ -47,13 +54,18 @@
     margin-left: .7rem;
     color: #ffffff;
     text-decoration: none;
-    
+
 }
+
 .head_link a{
     color: #ffffff;
     text-decoration: none;
 }
+
+
+
 /*Menu Hamburguesa*/
+
 .bars_menu{
     width: 30px;
     height: 30px;
@@ -64,9 +76,9 @@
     cursor: pointer;
     display: none;
     
-      
-    
 }
+
+
 .bars_menu span{
     display: block;
     width: 100%;
@@ -75,24 +87,60 @@
     margin-top: 6px;
     transform-origin: 0px 100%;
     transition: all 600ms;
-    
-    
-    
-   
+
 }
+
 .activeline1_bars_menu{
     transform: rotate(45deg) translate(-2px, 1px);
 }
+
 .activeline2_bars_menu{
     opacity: 0;
     margin-left: -40px;
 }
+
 .activeline3_bars_menu{
     transform: rotate(-45deg) translate(-4px, 2px);
 }
-@media (max-width: 808px) {
+
+
+
+@media (max-width: 760px) {
     
     .menu_items {
+       position: fixed;
+       top: 80px;
+       bottom: 50%;
+       background: #c18ec9;
+       width:100%;
+       left: -0.03rem;
+       display: flex;
+       justify-content: space-evenly;
+       flex-direction: column;
+       align-items: center;
+       display: none;
+       
+       
+    }
+
+    
+     
+
+    .bars_menu {
+        display: block;
+        position: static;
+        margin: 55px 70px 0 0;
+    }
+
+    .click{
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+    .menu_items{
         position: fixed;
         top: 80px;
         bottom: 52%;
@@ -103,72 +151,16 @@
         justify-content: space-evenly;
         flex-direction: column;
         align-items: center;
-        clip-path: circle(0 at center);
-    }
-
-    .bars_menu {
-        display: block;
-        position: static;
-        margin: 50px 35px 0 0;
-    }
-
-
-
-
-    @media (max-width: 600px) {
-        .head_logo{
-            scale:85%;
-    
-        }
-        }
-        .bars_menu {
-           
-            position: static;
-            margin: 55px 75px 0 0;
-        }
-    
-
-}
-
-
-
-
-
-@media (max-width: 500px) {
-    .head_logo{
-        scale:85%;
-        margin: 0 0 0 0;
-
-    }
-    .bars_menu {
-        display: block;
-        position: static;
-        margin: 40px 25px 0 0;
-        scale:85%;
-
-    }
-}
-@media (max-width: 400px) {
-    .head_logo{
-        scale:70%;
-        margin: 0 0 6px -8px;
-    }
-    .bars_menu {
-        display: block;
-        position: static;
-        margin: 35px 34px 0 0;
-        scale:75%;
-    }
-
-}
-@media (max-width: 350px) {
-    .head_logo{
-        scale:67%;
-    }
-    .bars_menu {
-        display: block;
-        position: static;
-        margin: 35px 25px 0 0;
-        scale:65%;
-    }
+        
+     }
+      .click{
+        opacity: 0;
+      }
+       
+     .bars_menu {
+         display: block;
+         position: static;
+         margin: 55px 75px 0 0;
+     }
+ 
 }
