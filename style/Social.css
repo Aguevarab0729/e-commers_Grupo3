@@ -1,0 +1,67 @@
+.Social__container{
+    background-color: #F0F3FF;
+    background-repeat: no-repeat;
+    justify-content: center;
+}
+
+.Social__contenido{
+    padding: 2rem 0 2rem 0rem;
+    display: flex;
+    flex-direction: column;
+
+}
+.Social__titulo{
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 38px;
+    
+    color: #502C8E;
+    
+}
+.Social__texto{
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 20px;
+
+    color: #000000;
+    
+}
+
+.Social__img{
+    width: 786px;
+    height: 379.21px;
+    max-width: 100%;
+
+}
+
+.tarjetas__boton--contactanos {
+    text-align: center;
+    width: 125px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #502c8e;
+    padding: .65rem 1rem;
+    text-decoration: none;
+    font-family: 'Roboto';
+    border: 1px solid #cbbbeb;
+    border-radius: 8px;
+    background-color: #cbbbeb;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 110px; 
+
+}
+
+
+@media screen and (min-width:600px){
+    .Social__container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-flow: row wrap;
+    }
+  }

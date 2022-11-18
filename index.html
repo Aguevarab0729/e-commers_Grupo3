@@ -4,39 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/encabezado.css">
-    <link rel="stylesheet" href="style/hero.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link href="https://fonts.cdnfonts.com/css/roboto" rel="stylesheet">
+    <link rel="stylesheet" href="style/encabezado.css">
+    <link rel="stylesheet" href="style/hero.css">
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/section4.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./style/section2.css">
+    <link rel="stylesheet" href="./style/section3.css">
+    <link href="style/Escuela.css" rel="stylesheet">
+    <link href="style/footer.css" rel="stylesheet">
+    <link href="style/login.css" rel="stylesheet">
+    <link href="style/Social.css" rel="stylesheet">
+    <title>PhotoAcademy</title>
 </head>
 <body>
 <main>
-    <section>
-        <header class="head">
-            <img class="head_logo" src="img/logo.svg" alt="Logo">
-            <nav class="head_nav">
-                <div class="bars_menu">
-                    
-                    <span class="line1_bars_menu"></span>
-                    <span class="line2_bars_menu"></span>
-                    <span class="line3_bars_menu"></span>
-                </div>  
-                <ul class="menu_items">
-                    <li class="head_link"><a href="#">Inicio</a></li>
-                    <li class="head_link"><a href="#">Precios</a></li>
-                    <li class="head_link"><a href="#">Ingresa</a></li>
-                    <li class="head_link"><button>Registrate gratis</button><a href="#"></a></li>
-                </ul>
-                    
-            </nav>
-        </header>
-    </section>
-    
-    <!-- **** Section 1 **** -->
-    
+    <header class="head">
+        <img class="head_logo" src="img/logo.svg" alt="Logo">
+        <nav class="head_nav">
+            <div class="bars_menu">
+                <input type="checkbox" id="menu" class="click">
+                <span class="line1_bars_menu"></span>
+                <span class="line2_bars_menu"></span>
+                <span class="line3_bars_menu"></span>
+            </div>  
+            <ul class="menu_items">
+                <li class="head_link"><a href="#">Inicio</a></li>
+                <li class="head_link"><a href="#">Precios</a></li>
+                <li class="head_link"><a href="#">Ingresa</a></li>
+                <li class="head_link"><button>Registrate gratis</button><a href="#"></a></li>
+            </ul>                  
+        </nav>
+    </header>
+
+<!-- **** Section 1 **** -->
+
     <section class="sec-hero">
         <h2 class="first-title">La fotografía y producción audiovisual al alcance de tus manos</h2>
         <p class="first-article">
@@ -46,42 +49,86 @@
         </p>
         <img src="img/hero_image.svg" class="heroimg" alt="">
     </section>
+ 
+<!-- **** Section 2 **** -->
     
-    <!-- **** Section 2 **** -->
-        
-        <section class="film">
-
-        </section>
-        
-    <!-- **** Section 5ion 3 **** -->    
-
-        <section class="online_school"></section>
-
-    <!-- **** Section 4 **** -->   
-    
-        <section class="cloud">
-               <h2 class="titulo">Almacenamiento en la nube de 1T</h2>
-                <p class="text-section">Podras editar y almacenar todas tus fotos en nuestro servicio de nube</p>
+    <section class="film">
+        <div class="film_container">
+            <img src="img/film.svg" alt="imagen film" class="image-film">
+            <div class="text">
+                <h1 class= "film_titulo">Aprende a crear contenido audiovisual impactante</h1>
+                <p class="film_text"> A lo largo de las unidades, aprenderás cómo crear contenidos visuales para publicarlos en las redes sociales, teniendo en cuenta técnicas de composición, escenografía y dirección. </p>
+                <a class="film_button">Ver más cursos </a>
             </div>
-            <img src="./img/cloud.svg" alt="archivos en la nube" class="cloud_img">
-        </section>
+        </div>
+    </section>
+    
+<!-- **** Section 3 **** -->    
 
-    <!-- **** CARRUCEL DE IMAGENES Section 5**** -->
-    
-    <div class="carrusel-imagenes">
-        <img src="./img/cloud.svg" alt="1" class="img-carrusel">
-        <img src="./img/film.svg" alt="2" class="img-carrusel">
-        <img src="./img/online_school.svg" alt="3" class="img-carrusel">
-        <img src="./img/hero image.svg" alt="4" class="img-carrusel">
+    <section  class="Escuela__en__linea__container">
+        <div class="Escuela__en__linea__left">
+            <img src="img/online_school.svg" alt="Imagen de escuela en linea" class = "Escuela__en__linea_img">
+        </div>
+        <div class="Escuela__en__linea">
+            <h2 class="Escuela__en__linea__titulo">Escuela en linea</h2>
+            <p class="Escuela__en__linea__texto">Enseñamos fotografía desde 2002. Nuestros <br> diseños están para llevar a los principiantes a un nivel <br> avanzado o llenar los vacíos que pueda tener en la fotógrafia <br> y ser más experimentados.</p>
+            <a href="#" class="tarjetas__boton tarjetas__boton--more boton">More about</a>
+        </div>
+    </section>
+
+<!-- **** Section 4 **** -->
+
+    <section class="cloud">
+        <h2 class="titulo">Almacenamiento en la nube de 1T</h2>
+        <p class="text-section">Podras editar y almacenar todas tus fotos en nuestro servicio de nube</p>
+        <img src="./img/cloud.svg" alt="archivos en la nube" class="cloud_img">
+    </section>
+
+<!-- **** Section 5 **** -->
+
+    <section class="Social__container">
+    <div class="Social__contenido">
+        <h2 class="Social__titulo">No solo te mostramos excelentes fotografías <br>¡te enseñamos cómo hacerlo!</h2>
+        <p class="Social__texto">Aclare la confusión y cree imágenes sorprendentes con una <br>enseñanza profesional estructurada.</p>
+        <a href="#" class="tarjetas__boton--contactanos tarjetas__boton--contactanos boton">Contactanos</a>
+        <img src="img/social.png" alt="Imagen Social Fotografia" class = "Social__img">
     </div>
-    
-     <!-- **** Footer **** -->
-     
-        <footer>
-            
-        </footer>
-        
-    </main>
-    <script src="js/headscript.js"></script>
+    </section>
+
+<!-- **** Footer **** -->
+
+    <section class="login__container">
+        <div class="login__principal">
+            <p class="login__pictagram__titulo"><img src="img/logo_login.png" alt="" class="login__logo__image">PhotoAcademy</p>
+            <img  src="img/contactanos-ilustracion.webp" alt="" class="login__image">
+        </div>
+        <div class="log__in">
+            <h2 class="login__titulo">Contáctanos</h2>
+            <div class="form">
+                <form class="login-form">
+                    <input class="caja__email" type="text" placeholder="Email"/>
+                    <input  class="caja__mensaje" type="Menssage" placeholder="Mensaje"/>
+                    <button class="caja__button">Enviar</button>
+                    <p class="message">Company/organization <a href="#">PhotoAcademy</a></p>
+                </form>
+            </div>
+        </div>  
+    </section>
+
+    <footer>
+    <hr>
+    <div class="foonter__Lista">
+        <ul class="footer__social">
+            <li><a href="#" class="footer__media"><img src="img/facebook.svg" alt="Ícono de Facebook"></a></li>
+            <li><a href="#" class="footer__media"><img src="img/instagram.svg" alt="Ícono de Instagram"></a></li>
+            <li><a href="#" class="footer__media"><img src="img/twitter.svg" alt="Ícono de Twitter"></a></li>
+            <li><a href="#" class="footer__media"><img src="img/linkedin.svg" alt="Ícono de linkedin"></a></li>
+            <li><a href="#" class="footer__media"><img src="img/pinterest.svg" alt="Ícono de Pinterest"></a></li>
+        </ul>
+        <p class="Derechos__Reservados">2003-2022 All Rights Riserved</p>
+    </div>
+    </footer>      
+</main>
+<script src="js/headscript.js"></script>
 </body>
 </html>

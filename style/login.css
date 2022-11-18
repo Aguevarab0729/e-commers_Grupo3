@@ -1,0 +1,99 @@
+.login__container{
+  background-color: white;
+  background-repeat: no-repeat;
+  gap: 100px;
+  justify-content: center;
+  padding: 2rem 0 2rem 0rem;
+}
+
+.login__principal{
+  justify-content: center;
+  flex-direction: row;
+}
+
+.login__logo__image{
+  width: 66px;
+  height: 60px;
+  float: left;
+  max-width: 100%;
+}
+
+.login__pictagram__titulo{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 38px;
+  color: #502C8E;
+}
+
+.login__image{
+  width: 598px;
+  height: 274px;
+  max-width: 100%;
+  margin-top: 3rem;
+}
+
+.login__titulo{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 38px;
+
+  color: #502C8E;
+
+}
+
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.form input {
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.caja__email{
+  padding: 15px 15px 15px 10px;
+  font-family: 'Roboto';
+}
+.caja__mensaje{
+  padding: 15px 15px 50px 10px;
+  font-family: 'Roboto';
+
+}
+.caja__button {
+  font-family: 'Roboto';
+  text-transform: uppercase;
+  outline: 0;
+  background: #a893d1;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 500;
+
+}
+
+@media screen and (min-width:600px){
+  .login__container{
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-flow: row wrap;
+  }
+}
