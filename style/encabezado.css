@@ -89,7 +89,7 @@
 @media (max-width: 808px) {
     
     .menu_items {
-        position: fixed;
+        position: relative;
         top: 80px;
         bottom: 52%;
         background: #c18ec9;
@@ -144,6 +144,18 @@
         scale:75%;
     }
 
+    .head_nav button{
+        background-color: #7c4185;
+        color: #ffffff;
+        font-weight: 700;
+        padding: 14px 20px;
+        border-radius: 10px;
+        border-color:#ac78ac;
+        font-size: 10px;
+        margin-right: 16px;
+        margin-top: 1px;
+    
+    }
 }
 
 @media (max-width: 350px) {

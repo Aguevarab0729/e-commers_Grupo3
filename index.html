@@ -11,10 +11,11 @@
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/section2.css">
     <link rel="stylesheet" href="./style/section3.css">
-    <link href="style/Escuela.css" rel="stylesheet">
-    <link href="style/footer.css" rel="stylesheet">
-    <link href="style/login.css" rel="stylesheet">
-    <link href="style/Social.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/carrusel.css">
+    <link rel="stylesheet" href="style/Escuela.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/login.css">
+    <link rel="stylesheet" href="style/Social.css">
     <title>PhotoAcademy</title>
 </head>
 <body>
@@ -63,16 +64,16 @@
         </div>
     </section>
     
-<!-- **** Section 3 **** -->    
+<!-- **** Section 3 Escuela **** -->    
 
 <section  class="Escuela__en__linea__container">
   <div class="Escuela__en__linea__left">
-   <img src="img/online_school.svg" alt="Imagen de escuela en linea" class = "Escuela__en__linea_img">
+    <img src="img/online_school.svg" alt="Imagen de escuela en linea" class = "Escuela__en__linea_img">
   </div>
   <div class="Escuela__en__linea">
-   <h2 class="Escuela__en__linea__titulo">Escuela en linea</h2>
-   <p class="Escuela__en__linea__texto">Enseñamos fotografía desde 2002. Nuestros <br> diseños están para llevar a los principiantes a un nivel <br> avanzado o llenar los vacíos que pueda tener en la fotógrafia <br> y ser más experimentados.</p>
-   <a href="#" class="tarjetas__boton tarjetas__boton--more boton">More about</a>
+    <h2 class="Escuela__en__linea__titulo">Escuela en linea</h2>
+    <p class="Escuela__en__linea__texto">Enseñamos fotografía desde 2002. Nuestros <br> diseños están para llevar a los principiantes a un nivel <br> avanzado o llenar los vacíos que pueda tener en la fotógrafia <br> y ser más experimentados.</p>
+    <a href="#" class="tarjetas__boton tarjetas__boton--more boton">More about</a>
   </div>
 </section>
 
@@ -80,15 +81,45 @@
 
 <section class="Social__container">
   <div class="Social__contenido">
-   <h2 class="Social__titulo">No solo te mostramos excelentes fotografías <br>¡te enseñamos cómo hacerlo!</h2>
-   <p class="Social__texto">Aclare la confusión y cree imágenes sorprendentes con una <br>enseñanza profesional estructurada.</p>
-   <a href="#" class="tarjetas__boton--contactanos tarjetas__boton--contactanos boton">Contactanos</a>
-   <img src="img/social.png" alt="Imagen Social Fotografia" class = "Social__img">
+    <h2 class="Social__titulo">No solo te mostramos excelentes fotografías <br>¡te enseñamos cómo hacerlo!</h2>
+    <p class="Social__texto">Aclare la confusión y cree imágenes sorprendentes con una <br>enseñanza profesional estructurada.</p>
+    <a href="#" class="tarjetas__boton--contactanos tarjetas__boton--contactanos boton">Contactanos</a>
+    <img src="img/social.png" alt="Imagen Social Fotografia" class = "Social__img">
   </div>
 </section>
 
-<!-- **** Footer **** -->
+<!-- **** Carrusel de imagenes ****-->
 
+<div class="carrusel-container">
+  <div class="carrusel fade">
+    <img src="img/carrusel_1.jpg" style="width:100%">
+  </div>
+
+  <div class="carrusel fade">
+    <img src="img/carrusel_2.jpg" style="width:100%">
+  </div>
+
+  <div class="carrusel fade">
+    <img src="img/carrusel_3.jpg" style="width:100%">
+  </div>
+
+  <div class="carrusel fade">  
+    <img src="img/carrusel_4.jpg" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="pluscarrusel(-1)">&#10094;</a>
+  <a class="next" onclick="pluscarrusel(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="boton" onclick="currentImg(1)"></span>
+  <span class="boton" onclick="currentImg(2)"></span>
+  <span class="boton" onclick="currentImg(3)"></span>
+  <span class="boton" onclick="currentImg(4)"></span>
+</div>
+
+<!-- **** Login  **** -->
 <section class="login__container">
  <div class="login__principal">
    <p class="login__pictagram__titulo"><img src="img/logo_login.png" alt="" class="login__logo__image">PhotoAcademy</p>
@@ -108,6 +139,8 @@
  </div>  
 </section>
 
+<!-- **** Footer **** -->
+
 <footer>
  <hr>
  <div class="foonter__Lista">
@@ -123,5 +156,6 @@
 </footer>      
 </main>
 <script src="js/headscript.js"></script>
+<script src="js/carrusel.js"></script>
 </body>
 </html>

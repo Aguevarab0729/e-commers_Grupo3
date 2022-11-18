@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box
+}
+
+.carrusel-container {
+  max-width: 1000px;
+  position: relative;
+  box-sizing:border-box;
+  margin: auto;
+}
+
+.carrusel {
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: rgb(250, 250, 145);
+    font-weight: bold;
+    font-size: 40px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Posicion "boton next" a la derecha */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* reacciona o capta evento cuando el cursor pasa */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.boton {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: rgb(146, 146, 146);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .boton:hover {
+  background-color: #717171;
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next, {
+    font-size: 11px
+  }
+}
