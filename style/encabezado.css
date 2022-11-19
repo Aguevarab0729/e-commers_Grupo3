@@ -1,7 +1,7 @@
 .head {
     display: flex; 
     width: 100%;
-    background-color: #7c4185;
+    background-color: #502C8E;
     box-sizing: border-box;
     justify-content: space-between;
     line-height: 18px;
@@ -26,7 +26,7 @@
     margin-top: 5px;    
 }
 .head_nav button{
-    background-color: #7c4185;
+    background-color: #764ac2;
     color: #ffffff;
     font-weight: 700;
     padding: 14px 20px;
@@ -35,7 +35,10 @@
     font-size: 19px;
     margin-right: 20px;
     margin-top: 2px;
+}
 
+.active, .head_nav button:hover {
+    background-color: #53d2e2;
 }
 
 .head_link {

@@ -15,7 +15,7 @@ function currentImg(n) {
 function showCarrucel(n) {
   let i;
   let carrusel = document.getElementsByClassName("carrusel");
-  let botones = document.getElementsByClassName("boton");
+  let botones = document.getElementsByClassName("boton_carrusel");
   if (n > carrusel.length) {
     carruselIndex = 1
     }

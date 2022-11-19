@@ -60,12 +60,12 @@
 }
 
 .film_button{
-    background-color: #502c8e;
-    border-radius: 2rem;
+    background-color:#cbbbeb;
+    color: #502c8e;
+    border-radius: 8px;
     font-size: 1.2rem;
-    color: #fff;
-    width: 250px;
-    font-weight: 500;
+    width: 40%;
+    font-weight: 700;
     padding: .85rem 2rem;
     justify-content:center;
     text-decoration: none;
@@ -74,6 +74,11 @@
     cursor: pointer;
     border: none;
     margin-left: 30px;
+    transform: translateX(-50%);
+}
+
+.active, .boton:hover {
+    background-color: #53d2e2;
 }
 
 @media screen and (max-width:600px) {

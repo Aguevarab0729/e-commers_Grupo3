@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="style/encabezado.css">
     <link rel="stylesheet" href="style/hero.css">
     <link rel="stylesheet" href="./style/style.css">
-    <link rel="stylesheet" href="./style/section2.css">
+    <link rel="stylesheet" href="./style/film.css">
     <link rel="stylesheet" href="./style/section3.css">
     <link rel="stylesheet" href="./style/carrusel.css">
-    <link rel="stylesheet" href="style/Escuela.css">
+    <link rel="stylesheet" href="style/escuela.css">
     <link rel="stylesheet" href="style/footer.css">
     <link rel="stylesheet" href="style/login.css">
-    <link rel="stylesheet" href="style/Social.css">
+    <link rel="stylesheet" href="style/social.css">
     <title>PhotoAcademy</title>
 </head>
 <body>
@@ -59,7 +59,7 @@
             <div class="text">
                 <h1 class= "film_titulo">Aprende a crear contenido audiovisual impactante</h1>
                 <p class="film_text"> A lo largo de las unidades, aprenderás cómo crear contenidos visuales para publicarlos en las redes sociales, teniendo en cuenta técnicas de composición, escenografía y dirección. </p>
-                <a class="film_button">Ver más cursos </a>
+                <a class="film_button boton">Ver más cursos </a>
             </div>
         </div>
     </section>
@@ -113,13 +113,14 @@
 <br>
 
 <div style="text-align:center">
-  <span class="boton" onclick="currentImg(1)"></span>
-  <span class="boton" onclick="currentImg(2)"></span>
-  <span class="boton" onclick="currentImg(3)"></span>
-  <span class="boton" onclick="currentImg(4)"></span>
+  <span class="boton_carrusel" onclick="currentImg(1)"></span>
+  <span class="boton_carrusel" onclick="currentImg(2)"></span>
+  <span class="boton_carrusel" onclick="currentImg(3)"></span>
+  <span class="boton_carrusel" onclick="currentImg(4)"></span>
 </div>
 
 <!-- **** Login  **** -->
+
 <section class="login__container">
  <div class="login__principal">
    <p class="login__pictagram__titulo"><img src="img/logo_login.png" alt="" class="login__logo__image">PhotoAcademy</p>
@@ -132,7 +133,7 @@
      <form class="login-form">
        <input class="caja__email" type="text" placeholder="Email"/>
        <input  class="caja__mensaje" type="Menssage" placeholder="Mensaje"/>
-       <button class="caja__button">Enviar</button>
+       <button class="caja__button" onclick="myMessage()">Enviar</button>
        <p class="message">Company/organization <a href="#">PhotoAcademy</a></p>
       </form>
    </div>
@@ -157,5 +158,6 @@
 </main>
 <script src="js/headscript.js"></script>
 <script src="js/carrusel.js"></script>
+<script src="js/messageLogin.js"></script>
 </body>
 </html>

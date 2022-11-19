@@ -39,7 +39,7 @@
   background-color: rgba(0,0,0,0.8);
 }
 
-.boton {
+.boton_carrusel {
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -50,7 +50,7 @@
   transition: background-color 0.6s ease;
 }
 
-.active, .boton:hover {
+.active, .boton_carrusel:hover {
   background-color: #717171;
 }
 

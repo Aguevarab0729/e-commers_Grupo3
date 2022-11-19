@@ -4,8 +4,6 @@ var line1_bars = document.querySelector(".line1_bars_menu");
 var line2_bars = document.querySelector(".line2_bars_menu");
 var line3_bars = document.querySelector(".line3_bars_menu");
 
-
-
 function animateBars(){
     line1_bars.classList.toggle("activeline1_bars_menu");
     line2_bars.classList.toggle("activeline2_bars_menu");
@@ -18,11 +16,8 @@ function animateBars(){
                 const menu = document.querySelector(".menu_items")
                 menu.classList.toggle("show")
             })
-    
         }
     })   
-    
-
 }
 
 
